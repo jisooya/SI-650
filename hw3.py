@@ -18,9 +18,7 @@ print("Done")
 test_data = pd.read_csv(TESTING_DATA, sep='\t')
 test_texts = test_data['text']
 test_matrix = vec.transform(test_texts)
-2
- 
-F19 SI 650 Homework 3 Memo Yuankun Zhu jennyykz Nov. 13th
+
 clf = svm.LinearSVC(C=2.0) clf.fit(train_matrix, labels) predicted_labels = clf.predict(test_matrix)
 # print(predicted_labels)
 # clf = LogisticRegression(penalty="l2")
